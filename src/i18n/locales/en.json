@@ -1,0 +1,158 @@
+{
+  "app": {
+    "name": "Sudhaar Setu",
+    "tagline": "Report Together, Resolve Faster"
+  },
+  "nav": {
+    "home": "Home",
+    "newComplaint": "New Complaint",
+    "myComplaints": "My Complaints",
+    "status": "Status",
+    "profile": "Profile",
+    "login": "Login",
+    "logout": "Logout",
+    "admin": "Admin"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "mobile": "Mobile Number",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "name": "Full Name",
+    "loginSuccess": "Login successful!",
+    "registerSuccess": "Registration successful!",
+    "invalidCredentials": "Invalid credentials",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "weakPassword": "Password must be at least 6 characters",
+    "forgotPassword": "Forgot Password?"
+  },
+  "home": {
+    "hero": {
+      "title": "Report Together, Resolve Faster",
+      "subtitle": "Your voice matters in building a better community. Report civic issues and track their resolution.",
+      "cta": "Raise an Issue"
+    },
+    "features": {
+      "title": "Why Choose Sudhaar Setu?",
+      "userFriendly": {
+        "title": "User-Friendly",
+        "description": "Simple and intuitive interface for everyone to use"
+      },
+      "tracking": {
+        "title": "Transparency & Tracking",
+        "description": "Real-time updates on your complaint status and resolution"
+      },
+      "photoReporting": {
+        "title": "Quick Photo Reporting",
+        "description": "Capture and submit photos directly from your mobile camera"
+      },
+      "multilingual": {
+        "title": "Multilingual",
+        "description": "Available in English and Hindi for wider accessibility"
+      },
+      "privacy": {
+        "title": "Privacy & Security",
+        "description": "Your data is secure and privacy is our priority"
+      },
+      "localAuthority": {
+        "title": "Local Authority Assignment",
+        "description": "Complaints are routed to relevant local authorities"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "How long does it take to resolve complaints?",
+      "a1": "Response times vary by category. Road issues typically take 3-7 days, water issues 1-3 days, and garbage collection 24-48 hours.",
+      "q2": "Is my personal information safe?",
+      "a2": "Yes, we prioritize your privacy. Only necessary information is shared with relevant authorities for complaint resolution.",
+      "q3": "Can I track my complaint status?",
+      "a3": "Absolutely! You can track your complaint status in real-time through the Status section.",
+      "q4": "What types of issues can I report?",
+      "a4": "You can report roads, water, sewage, garbage, street lights, public health, infrastructure, and other civic issues.",
+      "q5": "How do I use the camera feature?",
+      "a5": "Simply click on 'Add Photos' and allow camera access. You can take 3-5 photos to support your complaint.",
+      "q6": "Can I edit my complaint after submission?",
+      "a6": "You can edit complaints only while they are in 'Pending' status. Once reviewed, editing is not allowed."
+    }
+  },
+  "complaint": {
+    "new": "New Complaint",
+    "title": "Complaint Title",
+    "category": "Category",
+    "categories": {
+      "roads": "Roads",
+      "water": "Water",
+      "sewage": "Sewage",
+      "garbage": "Garbage",
+      "streetLight": "Street Light",
+      "publicHealth": "Public Health",
+      "infrastructure": "Infrastructure",
+      "others": "Others"
+    },
+    "location": "Location",
+    "description": "Description",
+    "photos": "Photos",
+    "addPhotos": "Add Photos",
+    "minPhotos": "Minimum 3 photos required",
+    "maxPhotos": "Maximum 5 photos allowed",
+    "submit": "Submit Complaint",
+    "submitted": "Complaint Submitted Successfully!",
+    "id": "Complaint ID",
+    "status": {
+      "pending": "Pending",
+      "inProgress": "In Progress",
+      "resolved": "Resolved",
+      "rejected": "Rejected"
+    },
+    "validation": {
+      "titleRequired": "Title is required",
+      "categoryRequired": "Category is required",
+      "descriptionRequired": "Description must be at least 20 characters",
+      "locationRequired": "Location is required",
+      "photosRequired": "At least 3 photos are required"
+    }
+  },
+  "admin": {
+    "dashboard": "Admin Dashboard",
+    "newComplaints": "New Complaints",
+    "allComplaints": "All Complaints",
+    "respondedComplaints": "Responded Complaints",
+    "users": "Users",
+    "updateStatus": "Update Status",
+    "addResponse": "Add Response",
+    "response": "Response",
+    "templates": {
+      "rejected": "Thank you for your complaint. Unfortunately, this issue is outside our jurisdiction. Please contact the appropriate authority.",
+      "inProgress": "Your complaint has been forwarded to the relevant department. Expected resolution time: {{time}}.",
+      "resolved": "Thank you for reporting this issue. It has been successfully resolved. We appreciate your civic participation."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "date": "Date",
+    "actions": "Actions",
+    "viewDetails": "View Details",
+    "noData": "No data available",
+    "error": "An error occurred",
+    "success": "Success",
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "toggle": "Toggle Theme"
+    },
+    "language": {
+      "english": "English",
+      "hindi": "हिंदी",
+      "toggle": "Change Language"
+    }
+  }
+}
