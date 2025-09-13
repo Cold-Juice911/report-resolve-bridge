@@ -11,7 +11,8 @@
     "profile": "प्रोफाइल",
     "login": "लॉगिन",
     "logout": "लॉगआउट",
-    "admin": "एडमिन"
+    "admin": "एडमिन",
+    "adminDashboard": "एडमिन डैशबोर्ड"
   },
   "auth": {
     "login": "लॉगिन",
@@ -21,13 +22,16 @@
     "password": "पासवर्ड",
     "confirmPassword": "पासवर्ड की पुष्टि करें",
     "name": "पूरा नाम",
+    "phone": "फोन नंबर",
     "loginSuccess": "लॉगिन सफल!",
     "registerSuccess": "पंजीकरण सफल!",
     "invalidCredentials": "अमान्य क्रेडेंशियल",
     "emailRequired": "ईमेल आवश्यक है",
     "passwordRequired": "पासवर्ड आवश्यक है",
     "weakPassword": "पासवर्ड कम से कम 6 अक्षर का होना चाहिए",
-    "forgotPassword": "पासवर्ड भूल गए?"
+    "forgotPassword": "पासवर्ड भूल गए?",
+    "loginRequired": "लॉगिन आवश्यक है",
+    "loginToView": "इस पृष्ठ को देखने के लिए कृपया लॉगिन करें"
   },
   "home": {
     "hero": {
@@ -115,13 +119,83 @@
       "photosRequired": "कम से कम 3 फोटो आवश्यक हैं"
     }
   },
+  "categories": {
+    "roads": "सड़कें",
+    "water": "पानी",
+    "sewage": "सीवेज",
+    "garbage": "कचरा",
+    "streetLight": "स्ट्रीट लाइट",
+    "publicHealth": "सार्वजनिक स्वास्थ्य",
+    "infrastructure": "बुनियादी ढांचा",
+    "others": "अन्य"
+  },
+  "status": {
+    "pending": "लंबित",
+    "in_progress": "प्रगति में",
+    "resolved": "हल हो गया",
+    "rejected": "अस्वीकृत",
+    "trackingDescription": "अपनी दर्ज शिकायतों की स्थिति को ट्रैक करें",
+    "filterByStatus": "स्थिति के अनुसार फ़िल्टर करें",
+    "filterByCategory": "श्रेणी के अनुसार फ़िल्टर करें",
+    "searchPlaceholder": "आईडी या शीर्षक द्वारा खोजें...",
+    "noResults": "कोई शिकायत नहीं मिली",
+    "tryDifferentFilters": "अपने फ़िल्टर को समायोजित करने का प्रयास करें",
+    "showingResults": "कुल {{total}} में से {{count}} शिकायतें दिखाई जा रही हैं",
+    "lastUpdate": "अंतिम अपडेट",
+    "latestUpdate": "नवीनतम अपडेट"
+  },
+  "complaints": {
+    "myComplaintsDescription": "अपनी सभी दर्ज शिकायतों को देखें और ट्रैक करें",
+    "noComplaints": "अभी तक कोई शिकायत दर्ज नहीं की गई है",
+    "createFirst": "शुरुआत करने के लिए अपनी पहली शिकायत दर्ज करें",
+    "photos": "तस्वीरें",
+    "viewDetails": "विवरण देखें",
+    "category": "श्रेणी",
+    "location": "स्थान",
+    "description": "विवरण",
+    "adminResponses": "प्रशासकीय उत्तर"
+  },
+  "profile": {
+    "description": "अपनी खाता सेटिंग्स और प्राथमिकताओं को प्रबंधित करें",
+    "personalInfo": "व्यक्तिगत जानकारी",
+    "personalInfoDescription": "अपनी व्यक्तिगत जानकारी अपडेट करें",
+    "preferences": "प्राथमिकताएं",
+    "preferencesDescription": "अपने ऐप अनुभव को अनुकूलित करें",
+    "language": "भाषा",
+    "theme": "थीम",
+    "role": "भूमिका",
+    "accountActions": "खाता कार्य",
+    "accountActionsDescription": "अपना खाता प्रबंधित करें",
+    "updateSuccess": "प्रोफ़ाइल अपडेट हो गई",
+    "updateSuccessMessage": "आपकी प्रोफ़ाइल सफलतापूर्वक अपडेट हो गई है",
+    "updateError": "प्रोफ़ाइल अपडेट करने में विफल"
+  },
   "admin": {
+    "accessDenied": "पहुंच निषेध",
+    "adminOnly": "यह पृष्ठ केवल प्रशासकों के लिए सुलभ है",
+    "dashboardDescription": "शिकायतों का प्रबंधन करें और सिस्टम गतिविधि की निगरानी करें",
+    "overview": "अवलोकन",
+    "complaints": "शिकायतें",
+    "responded": "उत्तर दिया गया",
+    "total": "कुल",
+    "categoryBreakdown": "श्रेणी विभाजन",
+    "filterByCategory": "श्रेणी के अनुसार फ़िल्टर करें",
+    "responses": "उत्तर",
+    "manage": "प्रबंधित करें",
+    "updateStatus": "स्थिति अपडेट करें",
+    "responseMessage": "उत्तर संदेश",
+    "responseMessagePlaceholder": "नागरिक को अपना उत्तर दर्ज करें...",
+    "updateComplaint": "शिकायत अपडेट करें",
+    "previousResponses": "पिछले उत्तर",
+    "lastResponse": "अंतिम उत्तर",
+    "responseRequired": "उत्तर संदेश आवश्यक है",
+    "updateSuccess": "सफलता",
+    "complaintUpdated": "शिकायत की स्थिति सफलतापूर्वक अपडेट हो गई",
     "dashboard": "एडमिन डैशबोर्ड",
     "newComplaints": "नई शिकायतें",
     "allComplaints": "सभी शिकायतें",
     "respondedComplaints": "उत्तरित शिकायतें",
     "users": "उपयोगकर्ता",
-    "updateStatus": "स्थिति अपडेट करें",
     "addResponse": "प्रतिक्रिया जोड़ें",
     "response": "प्रतिक्रिया",
     "templates": {
@@ -129,6 +203,10 @@
       "inProgress": "आपकी शिकायत संबंधित विभाग को भेजी गई है। अपेक्षित समाधान समय: {{time}}।",
       "resolved": "इस मुद्दे की रिपोर्ट करने के लिए धन्यवाद। इसे सफलतापूर्वक हल किया गया है। हम आपकी नागरिक भागीदारी की सराहना करते हैं।"
     }
+  },
+  "theme": {
+    "light": "हल्का",
+    "dark": "गहरा"
   },
   "common": {
     "loading": "लोड हो रहा है...",
@@ -144,6 +222,12 @@
     "noData": "कोई डेटा उपलब्ध नहीं",
     "error": "एक त्रुटि हुई",
     "success": "सफलता",
+    "all": "सभी",
+    "filters": "फ़िल्टर",
+    "clearFilters": "फ़िल्टर साफ़ करें",
+    "id": "आईडी",
+    "admin": "एडमिन",
+    "user": "उपयोगकर्ता",
     "theme": {
       "light": "लाइट",
       "dark": "डार्क",

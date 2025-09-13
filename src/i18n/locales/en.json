@@ -11,7 +11,8 @@
     "profile": "Profile",
     "login": "Login",
     "logout": "Logout",
-    "admin": "Admin"
+    "admin": "Admin",
+    "adminDashboard": "Admin Dashboard"
   },
   "auth": {
     "login": "Login",
@@ -21,13 +22,16 @@
     "password": "Password",
     "confirmPassword": "Confirm Password",
     "name": "Full Name",
+    "phone": "Phone Number",
     "loginSuccess": "Login successful!",
     "registerSuccess": "Registration successful!",
     "invalidCredentials": "Invalid credentials",
     "emailRequired": "Email is required",
     "passwordRequired": "Password is required",
     "weakPassword": "Password must be at least 6 characters",
-    "forgotPassword": "Forgot Password?"
+    "forgotPassword": "Forgot Password?",
+    "loginRequired": "Login Required",
+    "loginToView": "Please login to view this page"
   },
   "home": {
     "hero": {
@@ -130,6 +134,95 @@
       "resolved": "Thank you for reporting this issue. It has been successfully resolved. We appreciate your civic participation."
     }
   },
+  "categories": {
+    "roads": "Roads",
+    "water": "Water",
+    "sewage": "Sewage",
+    "garbage": "Garbage",
+    "streetLight": "Street Light",
+    "publicHealth": "Public Health",
+    "infrastructure": "Infrastructure",
+    "others": "Others"
+  },
+  "status": {
+    "pending": "Pending",
+    "in_progress": "In Progress", 
+    "resolved": "Resolved",
+    "rejected": "Rejected",
+    "trackingDescription": "Track the status of your submitted complaints",
+    "filterByStatus": "Filter by Status",
+    "filterByCategory": "Filter by Category",
+    "searchPlaceholder": "Search by ID or title...",
+    "noResults": "No complaints found",
+    "tryDifferentFilters": "Try adjusting your filters",
+    "showingResults": "Showing {{count}} of {{total}} complaints",
+    "lastUpdate": "Last Update",
+    "latestUpdate": "Latest Update"
+  },
+  "complaints": {
+    "myComplaintsDescription": "View and track all your submitted complaints",
+    "noComplaints": "No complaints submitted yet",
+    "createFirst": "Create your first complaint to get started",
+    "photos": "photos",
+    "viewDetails": "View Details",
+    "category": "Category",
+    "location": "Location",
+    "description": "Description",
+    "adminResponses": "Admin Responses"
+  },
+  "profile": {
+    "description": "Manage your account settings and preferences",
+    "personalInfo": "Personal Information",
+    "personalInfoDescription": "Update your personal details",
+    "preferences": "Preferences",
+    "preferencesDescription": "Customize your app experience",
+    "language": "Language",
+    "theme": "Theme",
+    "role": "Role",
+    "accountActions": "Account Actions",
+    "accountActionsDescription": "Manage your account",
+    "updateSuccess": "Profile Updated",
+    "updateSuccessMessage": "Your profile has been updated successfully",
+    "updateError": "Failed to update profile"
+  },
+  "admin": {
+    "accessDenied": "Access Denied",
+    "adminOnly": "This page is only accessible to administrators",
+    "dashboardDescription": "Manage complaints and monitor system activity",
+    "overview": "Overview",
+    "complaints": "Complaints",
+    "responded": "Responded",
+    "total": "Total",
+    "categoryBreakdown": "Category Breakdown",
+    "filterByCategory": "Filter by Category",
+    "responses": "responses",
+    "manage": "Manage",
+    "updateStatus": "Update Status",
+    "responseMessage": "Response Message",
+    "responseMessagePlaceholder": "Enter your response to the citizen...",
+    "updateComplaint": "Update Complaint",
+    "previousResponses": "Previous Responses",
+    "lastResponse": "Last Response",
+    "responseRequired": "Response message is required",
+    "updateSuccess": "Success",
+    "complaintUpdated": "Complaint status updated successfully",
+    "dashboard": "Admin Dashboard",
+    "newComplaints": "New Complaints",
+    "allComplaints": "All Complaints",
+    "respondedComplaints": "Responded Complaints",
+    "users": "Users",
+    "addResponse": "Add Response",
+    "response": "Response",
+    "templates": {
+      "rejected": "Thank you for your complaint. Unfortunately, this issue is outside our jurisdiction. Please contact the appropriate authority.",
+      "inProgress": "Your complaint has been forwarded to the relevant department. Expected resolution time: {{time}}.",
+      "resolved": "Thank you for reporting this issue. It has been successfully resolved. We appreciate your civic participation."
+    }
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
   "common": {
     "loading": "Loading...",
     "save": "Save",
@@ -144,6 +237,12 @@
     "noData": "No data available",
     "error": "An error occurred",
     "success": "Success",
+    "all": "All",
+    "filters": "Filters",
+    "clearFilters": "Clear Filters",
+    "id": "ID",
+    "admin": "Admin",
+    "user": "User",
     "theme": {
       "light": "Light",
       "dark": "Dark",
