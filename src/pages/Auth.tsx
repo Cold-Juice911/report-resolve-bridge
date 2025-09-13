@@ -8,7 +8,7 @@ import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Eye, EyeOff } from 'lucide-react';
-import sudhaarlLogo from '@/assets/sudhaar-logo.png';
+import sudhaarlLogo from '@/assets/sudhaar-official-logo.jpg';
 
 export const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X, Sun, Moon, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/contexts/AuthContext';
-import sudhaarlLogo from '@/assets/sudhaar-logo.png';
+import sudhaarlLogo from '@/assets/sudhaar-official-logo.jpg';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -19,7 +19,7 @@ import {
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
 import { useState } from 'react';
-import sudhaarlLogo from '@/assets/sudhaar-logo.png';
+import sudhaarlLogo from '@/assets/sudhaar-official-logo.jpg';
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -99,16 +99,16 @@ export const Home = () => {
           <div className="text-center">
             {/* Large Logo */}
             <div className="flex justify-center mb-8">
-              <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-primary/10 to-primary/20 rounded-2xl flex items-center justify-center shadow-2xl p-4">
+              <div className="w-32 h-32 sm:w-48 sm:h-48 lg:w-56 lg:h-56 bg-white/50 dark:bg-card/50 rounded-3xl flex items-center justify-center shadow-2xl backdrop-blur-sm border border-white/20 p-6">
                 <img src={sudhaarlLogo} alt="Sudhaar Setu Logo" className="w-full h-full object-contain" />
               </div>
             </div>
             
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               {t('home.hero.title')}
             </h1>
             
-            <p className="text-xl sm:text-2xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
               {t('home.hero.subtitle')}
             </p>
             
