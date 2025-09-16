@@ -1,18 +1,28 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Home, Plus, Activity, History, User } from 'lucide-react';
+import { useAuth } from '@/contexts/AuthContext';
 
 export const MobileNav = () => {
   const { t } = useTranslation();
   const location = useLocation();
+  const { user } = useAuth();
 
-  const navigation = [
+  // Different navigation items based on user role
+  const allNavigation = [
     { name: t('nav.home'), href: '/', icon: Home },
     { name: t('nav.newComplaint'), href: '/complaint/new', icon: Plus },
     { name: t('nav.status'), href: '/status', icon: Activity },
     { name: t('nav.myComplaints'), href: '/complaints', icon: History },
     { name: t('nav.profile'), href: '/profile', icon: User },
   ];
+
+  const adminNavigation = [
+    { name: t('nav.home'), href: '/', icon: Home },
+    { name: t('nav.profile'), href: '/profile', icon: User },
+  ];
+
+  const navigation = user?.role === 'admin' ? adminNavigation : allNavigation;
 
   const isActive = (path: string) => location.pathname === path;
 
