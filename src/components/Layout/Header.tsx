@@ -58,7 +58,7 @@ export const Header = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation - Hidden for admin */}
+          {/* Desktop Navigation - Only for non-admin users */}
           {user?.role !== 'admin' && (
             <nav className="hidden lg:flex items-center space-x-1">
               {navigation.map((item) => (
@@ -74,32 +74,6 @@ export const Header = () => {
                   {item.name}
                 </Link>
               ))}
-            </nav>
-          )}
-
-          {/* Admin Navigation - Only Home & Profile */}
-          {user?.role === 'admin' && (
-            <nav className="hidden lg:flex items-center space-x-1">
-              <Link
-                to="/"
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  isActive('/')
-                    ? 'bg-primary text-primary-foreground'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                }`}
-              >
-                {t('nav.home')}
-              </Link>
-              <Link
-                to="/profile"
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  isActive('/profile')
-                    ? 'bg-primary text-primary-foreground'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                }`}
-              >
-                {t('nav.profile')}
-              </Link>
             </nav>
           )}
 
@@ -133,18 +107,9 @@ export const Header = () => {
             {/* Auth Buttons */}
             <div className="hidden sm:flex items-center space-x-2">
               {user ? (
-                <>
-                  {user.role === 'admin' && (
-                    <Link to="/admin">
-                      <Button variant="secondary" size="sm">
-                        {t('nav.admin')}
-                      </Button>
-                    </Link>
-                  )}
-                  <Button variant="outline" size="sm" onClick={logout}>
-                    {t('nav.logout')}
-                  </Button>
-                </>
+                <Button variant="outline" size="sm" onClick={logout}>
+                  {t('nav.logout')}
+                </Button>
               ) : (
                 <Link to="/auth">
                   <Button variant="default" size="sm">
