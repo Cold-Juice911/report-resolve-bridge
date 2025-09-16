@@ -19,7 +19,7 @@ import {
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
 import { useState } from 'react';
-import sudhaarlLogo from '@/assets/sudhaar-official-logo.jpg';
+import sudhaarlLogo from '@/assets/sudhar-logo.png';
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -96,29 +96,31 @@ export const Home = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-primary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <div className="text-center">
+          <div className="text-center lg:flex ">
             {/* Large Logo */}
-            <div className="flex justify-center mb-8">
-              <div className="w-32 h-32 sm:w-48 sm:h-48 lg:w-56 lg:h-56 bg-white/50 dark:bg-card/50 rounded-3xl flex items-center justify-center shadow-2xl backdrop-blur-sm border border-white/20 p-6">
-                <img src={sudhaarlLogo} alt="Sudhaar Setu Logo" className="w-full h-full object-contain" />
-              </div>
-            </div>
-            
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <div className="w-5/6 ml-8 sm:ml-14 lg:w-1/2 lg:mr-8 lg:h-full">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-10 leading-tight lg:h-1/2">
               {t('home.hero.title')}
             </h1>
             
-            <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl sm:text-xl text-muted-foreground mb-10 max-w-3xl lg:w-5/6 mx-auto leading-normal lg:h-2/4 lg:mt-4">
               {t('home.hero.subtitle')}
             </p>
             
             <Link to="/complaint/new">
-              <Button className="btn-hero text-lg px-12 py-4 h-auto">
+              <Button className="btn-hero text-lg px-12 py-4 h-auto lg:h-2/4 mt-6">
                 <Plus className="mr-2 h-6 w-6" />
                 {t('home.hero.cta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
+            </div>
+
+            <div className="lg:flex justify-center hidden lg:w-2/5 lg:h-full">
+              <div className="w-32 h-32 sm:w-48 sm:h-48 lg:w-11/12 lg:h-1/2 lg:ml-10 sm:mt-10 rounded-3xl flex items-center justify-center shadow-2xl backdrop-blur-sm  p-6">
+                <img src={sudhaarlLogo} alt="Sudhaar Setu Logo" className="w-full h-full object-contain" />
+              </div>
+            </div>
           </div>
         </div>
         
