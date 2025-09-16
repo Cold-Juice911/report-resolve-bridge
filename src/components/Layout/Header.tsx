@@ -58,22 +58,50 @@ export const Header = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-1">
-            {navigation.map((item) => (
+          {/* Desktop Navigation - Hidden for admin */}
+          {user?.role !== 'admin' && (
+            <nav className="hidden lg:flex items-center space-x-1">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    isActive(item.href)
+                      ? 'bg-primary text-primary-foreground'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+          )}
+
+          {/* Admin Navigation - Only Home & Profile */}
+          {user?.role === 'admin' && (
+            <nav className="hidden lg:flex items-center space-x-1">
               <Link
-                key={item.name}
-                to={item.href}
+                to="/"
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  isActive(item.href)
+                  isActive('/')
                     ? 'bg-primary text-primary-foreground'
                     : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
               >
-                {item.name}
+                {t('nav.home')}
               </Link>
-            ))}
-          </nav>
+              <Link
+                to="/profile"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  isActive('/profile')
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                }`}
+              >
+                {t('nav.profile')}
+              </Link>
+            </nav>
+          )}
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-2">
@@ -138,8 +166,8 @@ export const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
+        {/* Mobile Navigation - Hidden for admin */}
+        {isMenuOpen && user?.role !== 'admin' && (
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 border-t border-border">
               {navigation.map((item) => (
@@ -159,15 +187,6 @@ export const Header = () => {
               <div className="pt-2 border-t border-border">
                 {user ? (
                   <div className="space-y-1">
-                    {user.role === 'admin' && (
-                      <Link
-                        to="/admin"
-                        className="block px-3 py-2 text-base font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded-md"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {t('nav.admin')}
-                      </Link>
-                    )}
                     <button
                       onClick={() => {
                         logout();
@@ -187,6 +206,47 @@ export const Header = () => {
                     {t('nav.login')}
                   </Link>
                 )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Admin Mobile Navigation - Only Home & Profile */}
+        {isMenuOpen && user?.role === 'admin' && (
+          <div className="lg:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 border-t border-border">
+              <Link
+                to="/"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                  isActive('/')
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t('nav.home')}
+              </Link>
+              <Link
+                to="/profile"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                  isActive('/profile')
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t('nav.profile')}
+              </Link>
+              <div className="pt-2 border-t border-border">
+                <button
+                  onClick={() => {
+                    logout();
+                    setIsMenuOpen(false);
+                  }}
+                  className="block w-full text-left px-3 py-2 text-base font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded-md"
+                >
+                  {t('nav.logout')}
+                </button>
               </div>
             </div>
           </div>
