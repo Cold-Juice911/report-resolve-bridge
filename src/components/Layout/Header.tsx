@@ -30,13 +30,18 @@ export const Header = () => {
     }
   };
 
-  const navigation = [
-    { name: t('nav.home'), href: '/' },
-    { name: t('nav.newComplaint'), href: '/complaint/new' },
-    { name: t('nav.myComplaints'), href: '/complaints' },
-    { name: t('nav.status'), href: '/status' },
-    { name: t('nav.profile'), href: '/profile' },
-  ];
+  const navigation = user?.role === 'admin' 
+    ? [
+        { name: t('nav.home'), href: '/' },
+        { name: t('nav.profile'), href: '/profile' },
+      ]
+    : [
+        { name: t('nav.home'), href: '/' },
+        { name: t('nav.newComplaint'), href: '/complaint/new' },
+        { name: t('nav.myComplaints'), href: '/complaints' },
+        { name: t('nav.status'), href: '/status' },
+        { name: t('nav.profile'), href: '/profile' },
+      ];
 
   const isActive = (path: string) => location.pathname === path;
 
