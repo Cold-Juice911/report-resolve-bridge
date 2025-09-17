@@ -116,8 +116,8 @@ export const Home = () => {
             </Link>
             </div>
 
-            <div className="lg:flex justify-center hidden lg:w-2/5 lg:h-full">
-              <div className="w-32 h-32 sm:w-48 sm:h-48 lg:w-11/12 lg:h-1/2 lg:ml-10 sm:mt-10 rounded-3xl flex items-center justify-center shadow-2xl backdrop-blur-sm  p-6">
+            <div className="lg:flex lg:justify-center hidden lg:w-96 lg:h-80 lg:absolute lg:top-16 lg:left-1/2 lg:ml-40">
+              <div className="w-32 h-32 sm:w-48 sm:h-48 lg:w-full lg:h-full sm:mt-10 rounded-3xl shadow-2xl bg-slate-100 bg-opacity-80 ">
                 <img src={sudhaarlLogo} alt="Sudhaar Setu Logo" className="w-full h-full object-contain" />
               </div>
             </div>

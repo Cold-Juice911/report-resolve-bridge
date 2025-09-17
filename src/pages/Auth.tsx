@@ -94,7 +94,7 @@ export const Auth = () => {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <img src={sudhaarlLogo} alt="Sudhaar Setu Logo" className="w-12 h-12" />
+            <img src={sudhaarlLogo} alt="Sudhaar Setu Logo" className="w-12 h-12 bg-slate-100 rounded-sm" />
             <div>
               <CardTitle className="text-2xl">{t('app.name')}</CardTitle>
               <CardDescription>{t('app.tagline')}</CardDescription>
@@ -118,7 +118,7 @@ export const Auth = () => {
                     type="email"
                     value={formData.email}
                     onChange={(e) => handleChange('email', e.target.value)}
-                    placeholder="user@example.com"
+                    placeholder="email@gmail.com"
                     className={errors.email ? 'border-destructive' : ''}
                   />
                   {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
@@ -167,7 +167,7 @@ export const Auth = () => {
                     type="text"
                     value={formData.name}
                     onChange={(e) => handleChange('name', e.target.value)}
-                    placeholder="John Doe"
+                    placeholder="Full Name"
                     className={errors.name ? 'border-destructive' : ''}
                   />
                   {errors.name && <p className="text-sm text-destructive">{errors.name}</p>}
@@ -180,7 +180,7 @@ export const Auth = () => {
                     type="email"
                     value={formData.email}
                     onChange={(e) => handleChange('email', e.target.value)}
-                    placeholder="john@example.com"
+                    placeholder="email@gmail.com"
                     className={errors.email ? 'border-destructive' : ''}
                   />
                   {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
@@ -193,7 +193,7 @@ export const Auth = () => {
                     type="tel"
                     value={formData.mobile}
                     onChange={(e) => handleChange('mobile', e.target.value)}
-                    placeholder="+91 9876543210"
+                    placeholder="+91 XXXXXXXXXX"
                   />
                 </div>
 
